@@ -6,6 +6,8 @@ class ArticlesController < ApplicationController
     def show
         @article = Article.find(params[:id])
     end
+<<<<<<< HEAD
+=======
 
     def new
        @article = Article.new 
@@ -46,4 +48,5 @@ class ArticlesController < ApplicationController
     def article_params
         params.require(:article).permit(:title, :content)
     end
+>>>>>>> master
 end
