@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<<<<<<< HEAD
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-<<<<<<< HEAD
-  </head>
-
-  <body>
-  <p>レイアウトだよ</p>
-=======
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
->>>>>>> parent of fe0af3c... no message
-    <%= yield %>
-  </body>
-</html>
-=======
 <head>
   <title>KantafkzwBlogApp</title>
   <%= csrf_meta_tags %>
@@ -31,7 +14,14 @@
 
 <body>
   <header class="header">
-    <p class="header_pageTitle">新着記事</p>
+    <div class="header_logos">
+      <% unless current_page?(root_path) %>
+        <%= link_to :back do %>
+          <%= image_tag 'back.svg', class: 'header_back' %>
+        <% end %>
+      <% end %>
+      <p class="header_pageTitle">BlogApp</p>
+    </div>
     <div class="dropdown">
       <%= image_tag 'default-avatar.png', class: 'header_avatar dropbtn' %>
       <div class="dropdown-content">
@@ -51,4 +41,3 @@
 </body>
 
 </html>
->>>>>>> master
