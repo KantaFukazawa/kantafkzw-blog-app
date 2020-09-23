@@ -14,3 +14,17 @@
             = link_to '削除する', article_path(@article), data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
   .article_content
     = @article.content
+
+    .article_heart
+      = image_tag 'heart.svg'
+
+.article
+  %h2 コメント一覧
+  - @comments.each do |comment|
+    .article_comment
+      %p= comment.content
+
+.container
+  = link_to new_article_comment_path(@article) do
+    .btn-secondary
+      コメントを追加
