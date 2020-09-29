@@ -17,7 +17,11 @@ class ArticlesController < ApplicationController
 
     def create
         @article = current_user.articles.build(article_params)
+<<<<<<< HEAD
         if @article.save！
+=======
+        if @article.save
+>>>>>>> d0c57297d5d98a67330b73e49cbebdf9d9973171
             redirect_to article_path(@article), notice: '保存できたよ'
         else 
             flash.now[:error] = '保存に失敗しました' 
