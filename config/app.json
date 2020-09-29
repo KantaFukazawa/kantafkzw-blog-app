@@ -1,0 +1,16 @@
+{
+  "name": "blog app",
+  "description": "This is kantafkzw-blog-app",
+  "keywords": [],
+  "website": "",
+  "repository": "https://github.com/KantaFukazawa/kantafkzw-blog-app",
+  "env": {},
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }, {
+    "url": "heroku/ruby"
+  }]
+}
