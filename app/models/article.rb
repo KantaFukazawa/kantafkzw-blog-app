@@ -30,18 +30,6 @@ class Article < ApplicationRecord
     has_many :likes, dependent: :destroy
     belongs_to :user
 
-    def display_created_at
-        self.created_at
-    end
-
-    def author_name
-      user.display_name
-    end
-
-    def like_count
-      likes.count
-    end
-
       private
       def validete_title_and_contents_length
         char_count = self.title.length + self.content.length

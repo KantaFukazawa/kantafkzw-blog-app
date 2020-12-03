@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'active_decorator'
 gem 'faker'
 gem 'hamlit'
 gem 'annotate'
@@ -28,6 +29,7 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem 'devise'
 gem 'aws-sdk-s3', require: false
+gem 'pry-byebug'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
