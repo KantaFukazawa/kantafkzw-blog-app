@@ -33,6 +33,7 @@ gem 'aws-sdk-s3', require: false
 gem 'pry-byebug'
 gem 'sidekiq'
 
+
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
 
