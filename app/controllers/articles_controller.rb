@@ -7,15 +7,11 @@ class ArticlesController < ApplicationController
         @articles =  Article.all
     end
 
-    def show 
+    def show
     end
 
     def new
        @article = current_user.articles.build
-    end
-
-    def like
-        
     end
 
     def create
@@ -57,5 +53,4 @@ class ArticlesController < ApplicationController
     def set_article
         @article = Article.find(params[:id])
     end
-
 end
