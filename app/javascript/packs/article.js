@@ -1,5 +1,4 @@
 import $ from 'jquery'
-
 import axios from 'modules/axios'
 import {
   listenInactiveHeartEvent,
@@ -63,6 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
       handleHeartDisplay(hasLiked)
     })
 
-    listenInactiveHeartEvent(articleId)
-    listenActiveHeartEvent(articleId)
+  listenInactiveHeartEvent(articleId)
+  listenActiveHeartEvent(articleId)
 })

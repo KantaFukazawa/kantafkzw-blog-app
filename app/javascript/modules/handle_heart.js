@@ -1,6 +1,7 @@
 import $ from 'jquery'
 import axios from 'modules/axios'
 
+
 const listenInactiveHeartEvent = (articleId) => {
   $('.inactive-heart').on('click', () => {
     axios.post(`/api/articles/${articleId}/like`)
